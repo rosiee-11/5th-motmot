@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Monthsary!</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #82CAFF, #4682B4);
+    color: #555;
+  }
+
+  header {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(70, 142, 195, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative; /* for overlaying rain */
+    z-index: 1;
+  }
+
+  header h1 {
+    font-size: 2.8em;
+    margin: 0;
+    color: #36454f;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+  /* Rain-like hearts container covering entire page */
+  .rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* so it doesn't block clicks */
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  /* Style for individual hearts as raindrops */
+  .heart {
+    position: absolute;
+    font-size: 16px; /* smaller size for rain */
+    color: #87AFC7; /* Light Steel Blue from palette */
+    opacity: 0.7;
+    animation: fallRain 4s linear infinite;
+  }
+
+  /* Generate multiple hearts with different starting points and delays */
+  /* Using nth-child for variation */
+  /* You can add more hearts for a denser rain */
+
+  /* Example positions and delays for variation */
+  /* Adjust as needed for density and randomness */
+  .heart:nth-child(1) { left: 5%; top: -10px; animation-delay: 0s; }
+  .heart:nth-child(2) { left: 15%; top: -20px; animation-delay: 0.5s; }
+  .heart:nth-child(3) { left: 25%; top: -15px; animation-delay: 1s; }
+  .heart:nth-child(4) { left: 40%; top: -25px; animation-delay: 0.3s; }
+  .heart:nth-child(5) { left: 55%; top: -10px; animation-delay: 0.7s; }
+  .heart:nth-child(6) { left: 70%; top: -18px; animation-delay: 0.2s; }
+  .heart:nth-child(7) { left: 85%; top: -12px; animation-delay: 0.4s; }
+  /* Add more hearts if desired for more rain effect */
+
+  /* Keyframes for falling rain effect, looping forever */
+  @keyframes fallRain {
+    0% {
+      top: -20px;
+      opacity: 0.7;
+      transform: translateY(0);
+    }
+    100% {
+      top: 110%; /* fall beyond the bottom */
+      opacity: 0;
+      transform: translateY(300px);
+    }
+  }
+
+  /* Styles for the content box */
+  .content {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    position: relative; /* keep above rain layer if needed */
+    z-index: 1;
+  }
+
+  .message {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<!-- Rain layer covering entire page -->
+<div class="rain">
+  <div class="heart">❤️</div>
+  <div class="heart">💖</div>
+  <div class="heart">💗</div>
+  <div class="heart">💕</div>
+  <div class="heart">💓</div>
+  <div class="heart">💙</div>
+  <div class="heart">💚</div>
+  <!-- Add more hearts here for denser rain -->
+</div>
+
+<header>
+  <h1>Happy Monthsary, My Love!</h1>
+</header>
+
+<div class="content">
+  <div class="message">
+    <p>Happy 5th monthsary, my love! It’s crazy to think that it’s been eight months since we first started this journey...three months of getting to know you and five beautiful months of calling you mine. Every day feels like a new chapter, and I want you to know that I won’t ever get tired of learning the little things about you. I’m looking forward to diving even deeper into everything that makes you you. I love you!</p>
+    <p>8 months ago you were just a co-dancer that shares the same passion I have in dancing...our third day in practice for opening..nag uusap lng us about sa coding and some weird college prof sa codings...at that time I didn't knew that I will love you this much....slowly time gave us more closure we started being clingy with each other..sooner lumipat tayo ng practice place para sa opening which is sa morales...there I started to feel something was off about you...it's the way you act and the others keep giving me hints about your feelings even justine and aysi I heard them teasing you na ayaw mong inuutusan ka but when it comes to me ang bilis mo huhuhuhu...</p>
+    <p>then nag simula yung practice sa closing...at the same time pumasok ako sa ricochet...even though tapos na yung practice natin sa TPA you still stayed behind kase sabe mo may ina antay ka but in truth you were accompanying me sa practice ko sa rico...funny how blind I am at that moment...then after few more days you started na ihatid ako sa sakayan ko pauwi...I slowly let my guard down kase at that moment I just felt na something clicked in me and having my walls against you is useless...</p>
+    <p>then the highlight yung unang tampo ko sayo...that time may practice ang rico at tpa at the same time I ask you na pakpakin yung likod ko kase ang hirap huminga :)) then you being playful hit me with your full force I remember ilang araw kitang hnd kinausap nun :> then sunod sunod cancel ng practice sa closing and sa opening ng intrams, then nung nag ka practice na for opening right after that practice nung pauwi na, nasa plaza ako nun that time nag lalakad na pauwi and you apoligize and hugged me saying na babawi ka then after that mas naging clingy ka pa sakin....</p>
+    <p>then nung mismong opening right after ng performance you tried to cheer me up and I said it's okiee tas after a few hours tinoyo ang taong ini hehehe then ayun we had a misunderstanding nanamn for the 2nd time then sabi mo mag update ako sayo pag uwi ko which I did namn kahit may tampo pa ko sayo that time...then you confessed at exactly Nov 15...then you started courting me which only took you 2 weeks :)) Dec 01 I opened my door for you...to enter my world...</p>
+    <p>then moving forward we did a lot of things...enjoy each other's company..we did have a little tampuhan back then and you never let me go home not until we fixed it...thankyou bebuu for being in this world...thankyou for existing...for coming into my life and for being my "bebu"...Iloveyou mahal...know that even when time and distance are getting between us..I still have you here in my heart... see you soon baby ILOVEYOUUUU</p>
+  </div>
+  <p style="text-align: center;"><b>ILOVEYOUU IBYANGIEEE ^3^</b></p>
+</div>
+</body>
+</html>
